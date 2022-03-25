@@ -2,9 +2,10 @@ h1{
 	font-family: 'Bebas Neue',sans-serif;
 	font-weight: 400;
 	font-size: 40px;
-	color: hsl(0, 0%, 39%);
+	color: white;
 	padding: 20px;
 	text-align: center;
+	background: linear-gradient(to right, lightgray 0%, teal 100%);
 }
 footer p{
 	margin: auto;
@@ -70,6 +71,7 @@ li a:hover {
 li.active{
 	background-color: teal;
 	font-weight: 900;
+	/* mix-blend-mode: hard-light; */
 	/* border-bottom: 3px solid blue; */
 	/* box-shadow: inset 0px 0px 0px 3px white;  */
 	/* box-sizing: border-box; */
@@ -92,7 +94,10 @@ li.active{
 	text-align: center;
 } */
 
-
+.team img{
+	opacity: 1;
+	border: 5px solid teal;
+}
 .container img{
 	opacity: 0.5;
 	border: 5px solid teal;
@@ -132,7 +137,7 @@ form {
 	  background-image: url(../images/home2.jpeg);
 	  padding-top: 200px;
 	  padding-bottom: 400px;
-	  width: 100%;
+	  /* width: 80vw; */
 	  background-attachment: fixed;
 	  background-size: cover;
 	  background-repeat: no-repeat;
@@ -161,15 +166,20 @@ form {
 		border-radius: 5px;
 		width: 100%;
 	} */
+
 	#logo{
 		animation: mymove 5s 1;
-		width: 70vw;
-		margin: auto;
+		width: 40vw;
+		margin-top: 20px;
+		margin-left: auto;
+		margin-right: auto;
 		display: block;
+		-webkit-mask-image: radial-gradient(circle at 80%, black 50%, rgba(0, 0, 0, 0.2) 10%);
+		mask-image: radial-gradient(circle at 80%, black 50%, rgba(0, 0, 0, 0.2) 10%);
 	  }
 	  @keyframes mymove{
 		from {width: 0vw;}
-		to {width: 70vw;}
+		to {width: 40vw;}
 		from {opacity: 0;}
 		to {opacity: 1}
 	  }
